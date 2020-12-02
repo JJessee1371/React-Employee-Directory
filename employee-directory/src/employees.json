@@ -1,0 +1,43 @@
+[
+    {
+        "id": 1,
+        "firstName": "Nathan",
+        "lastName": "Hammond",
+        "title": "Project Manager",
+        "managerFirst": "N/A",
+        "managerLast": "N/A"
+    },
+    {
+        "id": 2,
+        "firstName": "Desmond",
+        "lastName": "Miles",
+        "title": "Sr Engineer",
+        "managerFirst": "Nathan",
+        "managerLast": "Hammond"
+    },
+    {
+        "id": 3,
+        "firstName": "Jarrod",
+        "lastName": "Hemingway",
+        "title": "Intern",
+        "managerFirst": "Nathan",
+        "managerLast": "Hammond"
+    },
+    {
+        "id": 4,
+        "firstName": "Mike",
+        "lastName": "Johnson",
+        "title": "Jr Engineer",
+        "managerFirst": "Nathan",
+        "managerLast": "Hammond"
+    },
+    {
+        "id": 5,
+        "firstName": "Dwayne",
+        "lastName": "Wright",
+        "title": "Developer",
+        "managerFirst": "Nathan",
+        "managerLast": "Hammond"
+    }
+]
+    

@@ -1,4 +1,5 @@
 import React from 'react';
+import jsonData from '../employees.json';
 
 class Table extends React.Component {
     constructor() {
@@ -12,7 +13,7 @@ class Table extends React.Component {
     render() {
         return (
             <table className="table table-striped">
-                <thead classNmae="thead-dark">
+                <thead className="thead-dark">
                     <tr>
                         <th scope="col">Employee ID</th>
                         <th scope="col">First Name</th>
@@ -23,10 +24,10 @@ class Table extends React.Component {
                     </tr>
                 </thead>
                 <tbody>
-                    {this.state.employees.map(employee => {
+                    {jsonData.map(employee => {
                         return (
                             <tr> 
-                                <th key={employee.id} scope="row">{employee.id}</th>
+                                <td key={employee.id}>{employee.id}</td>
                                 <td key={employee.id}>{employee.firstName}</td>
                                 <td key={employee.id}>{employee.lastName}</td>
                                 <td key={employee.id}>{employee.title}</td>
@@ -35,7 +36,7 @@ class Table extends React.Component {
                             </tr>
                         );
                     })};
-                </tbody>
+                </tbody>  
             </table>
         );
     };

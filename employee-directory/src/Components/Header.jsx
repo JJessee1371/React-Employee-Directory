@@ -3,7 +3,12 @@ import React from 'react';
 class Header extends React.Component {
     render() {
         return (
-            <h1>Employee Directory</h1>
+            <div className="jumbotron jumbotron-fluid">
+                <div className="container">
+                    <h1 className="display-4">Employee Directory</h1>
+                    <p className="lead">Organization at the tip of your fingers!</p>
+                </div>
+            </div>
         );
     };
 };
