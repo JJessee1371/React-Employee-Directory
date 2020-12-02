@@ -1,1 +1,3 @@
 Given a table of random users, the user should be able to sort the table by at least one category and filter the users by at least one property. (Filter by name should be the top priority).
+
+-Separate functions for each button that sort the data accordingly?
