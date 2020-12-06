@@ -1,6 +1,8 @@
 import React from 'react';
+import SortWrapper from './SortWrapper';
+import FilterWrapper from './FilterWrapper';
+import TableHeader from './TableHeader';
 import TableBody from './TableBody';
-import { Button1, Button2, Button3, Button4 } from './Button';
 import employees from '../employees.json';
 
 class Table extends React.Component {
@@ -8,7 +10,10 @@ class Table extends React.Component {
         super();
 
         this.state = {
-            employees
+            employees,
+            title: '',
+            lastName: '',
+            managerLast: ''
         };
     };
 
@@ -82,34 +87,86 @@ class Table extends React.Component {
         this.setState({ employees: sorted });
     };
 
+
+    //Handle change to input value for title
+    handleInputChangeTitle = event => {
+        this.setState({
+            [event.target.name]: event.target.value
+        });
+    };
+
+    handleInputChangeLast = event => {
+        this.setState({
+            [event.target.name]: event.target.value
+        });
+    };
+
+    handleInputChangeMgrlast = event => {
+        this.setState({
+            [event.target.name]: event.target.value
+        });
+    };
+
+
+    //Handle form submission and filter by title
+    submitAndFilterTitle = event => {
+        event.preventDefault();
+        if (!this.state.title) {
+            alert('Please select a job title to filter by');
+        } else {
+            this.setState({ title: '' });
+        }
+
+        const employees = this.state.employees.filter(employee => employee.title === this.state.title);
+        this.setState({ employees });
+    };
+
+    submitAndFilterLast = event => {
+        event.preventDefault();
+        if (!this.state.lastName) {
+            alert('Please select a job title to filter by');
+        } else {
+            this.setState({ lastName: '' });
+        }
+
+        const employees = this.state.employees.filter(employee => employee.lastName === this.state.lastName);
+        this.setState({ employees });
+    };
+
+    submitAndFilterMgrlast = event => {
+        event.preventDefault();
+        if (!this.state.managerLast) {
+            alert('Please select a job title to filter by');
+        } else {
+            this.setState({ managerLast: '' });
+        }
+
+        const employees = this.state.employees.filter(employee => employee.managerLast === this.state.managerLast);
+        this.setState({ employees });
+    };
+
     render() {
         return (
             <div>
-                <Button1
-                    sort={this.sortFirst}
+                <SortWrapper
+                    sortFirst={this.sortFirst}
+                    sortLast={this.sortLast}
+                    sortTitle={this.sortTitle}
+                    sortManagerLast={this.sortManagerLast}
                 />
-                <Button2
-                    sort={this.sortLast}
-                />
-                <Button3
-                    sort={this.sortTitle}
-                />
-                <Button4
-                    sort={this.sortManagerLast}
+                <FilterWrapper
+                    title={this.state.title}
+                    lastName={this.state.lastName}
+                    managerLast={this.state.managerLast}
+                    changeTitle={this.handleInputChangeTitle}
+                    changeLast={this.handleInputChangeLast}
+                    changeManagerLast={this.handleInputChangeMgrlast}
+                    filterTitle={this.submitAndFilterTitle}
+                    filterLast={this.submitAndFilterLast}
+                    filterManagerLast={this.submitAndFilterMgrlast}
                 />
                 <table className="table table-striped">
-                    <thead className="thead-dark">
-                        <tr>
-                            <th scope="col">Employee ID</th>
-                            <th scope="col">First Name</th>
-                            <th scope="col">Last Name</th>
-                            <th scope="col">Email</th>
-                            <th scope="col">Phone #</th>
-                            <th scope="col">Title</th>
-                            <th scope="col">Manager First Name</th>
-                            <th scope="col">Manager Last Name</th>
-                        </tr>
-                    </thead>
+                    <TableHeader/>
                     <tbody>
                         {this.state.employees.map(employee => {
                             return (
