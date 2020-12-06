@@ -1,0 +1,9 @@
+.filter-container {
+    margin-top: 35px;
+    margin-bottom: 35px;
+};
+
+div.h2.filter-header {
+    text-align: center;
+    text-decoration: underline;
+};

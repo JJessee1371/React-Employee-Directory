@@ -1,10 +1,11 @@
 import React from 'react';
 import { Button1, Button2, Button3, Button4 } from './Button';
+import '../CSS/SortWrapper.css';
 
 function SortWrapper (props) {
     return (
         <div>
-            <h2>Sort by:</h2>
+            <h2 className="sort-header">Sort by:</h2>
             <div className="d-flex justify-content-around">
                 <Button1
                     sortFirst={props.sortFirst}

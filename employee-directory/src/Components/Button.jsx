@@ -1,4 +1,5 @@
 import React from 'react';
+import '../CSS/Button.css';
 
 //Buttons 1 - 4 handle sorting the table data
 function Button1(props) {
@@ -28,19 +29,19 @@ function Button4(props) {
 //Buttons 5 - 7 handle filtering the table
 function Button5(props) {
     return (
-        <button type="button" className="btn btn-info" onClick={ props.filterTitle }>Filter!</button>
+        <button type="button" className="btn btn-info filterBtn" onClick={ props.filterTitle }>Filter!</button>
     );
 };
 
 function Button6(props) {
     return (
-        <button type="button" className="btn btn-info" onClick={ props.filterLast }>Filter!</button>
+        <button type="button" className="btn btn-info filterBtn" onClick={ props.filterLast }>Filter!</button>
     );
 };
 
 function Button7(props) {
     return (
-        <button type="button" className="btn btn-info" onClick={ props.filterManagerLast }>Filter!</button>
+        <button type="button" className="btn btn-info filterBtn" onClick={ props.filterManagerLast }>Filter!</button>
     );
 };
 
