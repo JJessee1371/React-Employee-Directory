@@ -88,7 +88,7 @@ class Table extends React.Component {
     };
 
 
-    //Handle change to input value for title
+    //Handle change to input values on all forms
     handleInputChangeTitle = event => {
         this.setState({
             [event.target.name]: event.target.value

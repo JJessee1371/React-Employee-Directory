@@ -4,25 +4,25 @@ import '../CSS/Button.css';
 //Buttons 1 - 4 handle sorting the table data
 function Button1(props) {
     return (
-        <button type="button" className="btn btn-success" onClick={props.sort}>First name</button>
+        <button type="button" className="btn btn-success" onClick={props.sortFirst}>First name</button>
     );
 };
 
 function Button2(props) {
     return (
-        <button type="button" className="btn btn-success" onClick={props.sort}>Last name</button>
+        <button type="button" className="btn btn-success" onClick={props.sortLast}>Last name</button>
     );
 };
 
 function Button3(props) {
     return (
-        <button type="button" className="btn btn-success" onClick={props.sort}>Title</button>
+        <button type="button" className="btn btn-success" onClick={props.sortTitle}>Title</button>
     );
 };
 
 function Button4(props) {
     return (
-        <button type="button" className="btn btn-success" onClick={props.sort}>Manager Last</button>
+        <button type="button" className="btn btn-success" onClick={props.sortManagerLast}>Manager Last</button>
     );
 };
 
