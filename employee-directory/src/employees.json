@@ -45,9 +45,69 @@
         "lastName": "Wright",
         "email": "dwaysWright43@hotmail.com",
         "phone": "753-642-1974",
-        "title": "Developer",
+        "title": " Jr Developer",
         "managerFirst": "Nathan",
         "managerLast": "Hammond"
+    },
+    {
+        "id": 6,
+        "firstName": "Isaac",
+        "lastName": "Jackman",
+        "email": "jackjack@gmail.com",
+        "phone": "754-600-1414",
+        "title": "Intern",
+        "managerFirst": "Nathan",
+        "managerLast": "Hammond"
+    },
+    {
+        "id": 7,
+        "firstName": "Daniel",
+        "lastName": "Lyons",
+        "email": "dlyons@hotmail.com",
+        "phone": "893-641-6014",
+        "title": "Project Manager",
+        "managerFirst": "N/A",
+        "managerLast": "N/A"
+    },
+    {
+        "id": 8,
+        "firstName": "Neil",
+        "lastName": "Yuan",
+        "email": "ny7650@yahoo.com",
+        "phone": "961-657-1113",
+        "title": "Sr Engineer",
+        "managerFirst": "Daniel",
+        "managerLast": "Lyons"
+    },
+    {
+        "id": 9,
+        "firstName": "Chris",
+        "lastName": "Jefferson",
+        "email": "jeffC@hotmail.com",
+        "phone": "819-460-2233",
+        "title": "QA Engineer",
+        "managerFirst": "Daniel",
+        "managerLast": "Lyons"
+    },
+    {
+        "id": 10,
+        "firstName": "Rakesh",
+        "lastName": "Khatri",
+        "email": "rakeshK@gmail.com",
+        "phone": "714-501-9761",
+        "title": "Sr Developer",
+        "managerFirst": "Nathan",
+        "managerLast": "Hammond"
+    },
+    {
+        "id": 11,
+        "firstName": "Sue",
+        "lastName": "Yin",
+        "email": "suyin@hotmail.com",
+        "phone": "937-461-5208",
+        "title": "Jr Developer",
+        "managerFirst": "Daniel",
+        "managerLast": "Lyons"
     }
 ]
     
