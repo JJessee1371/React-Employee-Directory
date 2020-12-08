@@ -5,11 +5,10 @@ import '../CSS/FilterWrapper.css';
 
 function FilterWrapper(props) {
     return (
-        <div className="filter-container">
+        <div className=" col col-sm-12 col-md-6 col-lg-6 col-xl-6">
             <h2 className="filter-header">Filter by:</h2>
-            <div className="d-flex justify-content-around">
-                <div>
-                    <h3>Title</h3>
+            <div>
+                <div className="center">
                     <Form
                         title={props.title}
                         changeTitle={props.changeTitle}
@@ -19,7 +18,6 @@ function FilterWrapper(props) {
                     />
                 </div>
                 <div>
-                    <h3>Last Name</h3>
                     <Form2
                         lastName={props.lastName}
                         changeLast={props.changeLast}
@@ -28,8 +26,7 @@ function FilterWrapper(props) {
                         filterLast={props.filterLast}
                     />
                 </div>
-                <div>
-                    <h3>Manager Last Name</h3>
+                <div> 
                     <Form3
                         managerLast={props.managerLast}
                         changeManagerLast={props.changeManagerLast}

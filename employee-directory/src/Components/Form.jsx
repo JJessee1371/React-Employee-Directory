@@ -1,9 +1,11 @@
 import React from 'react';
+import '../CSS/Form.css';
 
 function Form (props) {
     return (
-        <form >
+        <form>
             <input
+                className="input-field"
                 placeholder="Title"
                 type="text"
                 name="title"
@@ -16,8 +18,9 @@ function Form (props) {
 
 function Form2 (props) {
     return (
-        <form >
+        <form>
             <input
+                className="input-field"
                 placeholder="Last Name"
                 type="text"
                 name="lastName"
@@ -30,8 +33,9 @@ function Form2 (props) {
 
 function Form3 (props) {
     return (
-        <form >
+        <form>
             <input
+                className="input-field"
                 placeholder="Manager Last Name"
                 type="text"
                 name="managerLast"

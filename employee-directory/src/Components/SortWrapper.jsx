@@ -4,9 +4,9 @@ import '../CSS/SortWrapper.css';
 
 function SortWrapper(props) {
     return (
-        <div>
+        <div className=" col col-sm-12 col-md-6 col-lg-6 col-xl-6">
             <h2 className="sort-header">Sort by:</h2>
-            <div className="d-flex justify-content-around">
+            <div className="d-flex flex-column justify-content-evenly">
                 <Button1
                     sortFirst={props.sortFirst}
                 />

@@ -1,3 +1,4 @@
-button.btn.btn-info.filterBtn {
-    text-align: center;
+.sortBtn {
+    width: 122px;
+    margin: 15px auto;
 };

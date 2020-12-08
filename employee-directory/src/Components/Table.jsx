@@ -148,23 +148,27 @@ class Table extends React.Component {
     render() {
         return (
             <div>
-                <SortWrapper
-                    sortFirst={this.sortFirst}
-                    sortLast={this.sortLast}
-                    sortTitle={this.sortTitle}
-                    sortManagerLast={this.sortManagerLast}
-                />
-                <FilterWrapper
-                    title={this.state.title}
-                    lastName={this.state.lastName}
-                    managerLast={this.state.managerLast}
-                    changeTitle={this.handleInputChangeTitle}
-                    changeLast={this.handleInputChangeLast}
-                    changeManagerLast={this.handleInputChangeMgrlast}
-                    filterTitle={this.submitAndFilterTitle}
-                    filterLast={this.submitAndFilterLast}
-                    filterManagerLast={this.submitAndFilterMgrlast}
-                />
+                <div className="container">
+                    <div className="row">
+                        <SortWrapper
+                            sortFirst={this.sortFirst}
+                            sortLast={this.sortLast}
+                            sortTitle={this.sortTitle}
+                            sortManagerLast={this.sortManagerLast}
+                        />
+                        <FilterWrapper
+                            title={this.state.title}
+                            lastName={this.state.lastName}
+                            managerLast={this.state.managerLast}
+                            changeTitle={this.handleInputChangeTitle}
+                            changeLast={this.handleInputChangeLast}
+                            changeManagerLast={this.handleInputChangeMgrlast}
+                            filterTitle={this.submitAndFilterTitle}
+                            filterLast={this.submitAndFilterLast}
+                            filterManagerLast={this.submitAndFilterMgrlast}
+                        />
+                    </div>
+                </div>
                 <table className="table table-striped">
                     <TableHeader/>
                     <tbody>
