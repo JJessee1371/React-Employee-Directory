@@ -4,13 +4,16 @@ It's important to be able to track vital employee information and rapidly sort t
 desired information. Using React, I have constrcuted an application that takes in employee data and displays it in an organized table that is easily readable. In order to facilitate the ability to quickly locate employees 
 or managers based on data that is stored in the table, there are options to both sort all of the existing data as well as to filter it to locate only employees that meet specific criteria. 
 
+## Screenshot
+![react-directory](https://user-images.githubusercontent.com/66571617/104136253-3534ab80-5352-11eb-83f7-4b58761fdb1c.PNG)
+
 ## Technologies Used
 * HTML
 * CSS
 * React
 * Bootstrap
 
-## Deployed Site 
+## Deployed Site
 
 ## Contributing
 Any and all contributions to this code are welcome. Please contact the creator at tjessee7624@gmail.com if you wish to add anything to the code base. 
