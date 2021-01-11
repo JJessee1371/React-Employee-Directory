@@ -14,7 +14,7 @@ or managers based on data that is stored in the table, there are options to both
 * Bootstrap
 
 ## Deployed Site
-
+https://jjessee1371.github.io/React-Employee-Directory/
 ## Contributing
 Any and all contributions to this code are welcome. Please contact the creator at tjessee7624@gmail.com if you wish to add anything to the code base. 
 
